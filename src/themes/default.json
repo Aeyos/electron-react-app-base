@@ -1,15 +1,19 @@
 {
     "mainColor": "#333",
+    "accentColor": "#f5a43d",
     "backgroundColor": "#FFF",
     "stripeColor": "#FFF",
     "backgroundStripeColor": "#333",
+ 
     "spacing": {
         "big": "50px",
         "medium": "25px",
         "small": "10px"
     },
     "fontSize": {
-        "title": "4em",
-        "big": "2em"
+        "title": "3em",
+        "big": "2em",
+        "medium": "1em",
+        "small": "0.5em"
     }
 }

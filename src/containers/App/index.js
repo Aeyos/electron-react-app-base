@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import Header from 'blocks/Header';
+
+import Header from 'components/blocks/Header';
+import Title from 'components/elements/Title';
+import AppStyle from 'components/elements/AppStyle';
 
 // import logo from './logo.svg';
 // import './App.css';
@@ -33,27 +36,27 @@ import Header from 'blocks/Header';
 //   }
 // });
 
-console.log(process.env);
-console.log(window.process.env);
+// console.log(process.env);
+// console.log(window.process.env);
 
 document.getElementsByTagName('title')[0].innerHTML = process.env.REACT_APP_NAME;
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <AppStyle>
         <Header>
           <Header.Title>
             {process.env.REACT_APP_NAME}
           </Header.Title>
         </Header>
-        <div>
-          <h2>Welcome to React/Electron</h2>
-        </div>
+        <Title>
+          Homepage
+        </Title>
         <p>
           Hello
         </p>
-      </div>
+      </AppStyle>
     );
   }
 }
