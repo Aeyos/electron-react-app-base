@@ -7,7 +7,7 @@ let mainWindow = null;
 function createWindow() {
   mainWindow = SetupWindow();
   mainWindow.on('closed', function () {
-    delete mainWindow;
+    mainWindow = null;
   });
 }
 
